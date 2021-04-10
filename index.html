@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
+
+  <title>Frontend Mentor | Launch Countdown Timer</title>
+
+</head>
+
+
+<!-- Background Scene -->
+<div>
+  <img src="./images/bg-stars.svg" alt="Stars" class="bg-stars" />
+  <img src="./images/pattern-hills.svg" alt="Hills Background" class="background">
+</div>
+
+<div class="container">
+
+  <div>
+    <h1 class="title">We're launching soon</h1>
+  </div>
+
+  <div class="mobile">
+    <!-- Timer - Start -->
+    <div class="timer">
+
+      <!-- Days -->
+      <div class="card">
+        <div class="top">
+          <span id="days">08</span>
+        </div>
+
+        <div class="bottom">
+        </div>
+
+        <div class="info">
+          Days
+        </div>
+      </div>
+
+      <!-- Hours -->
+      <div class="card">
+        <div class="top">
+          <span id="hours">23</span>
+        </div>
+
+        <div class="bottom">
+        </div>
+
+        <div class="info">
+          Hours
+        </div>
+      </div>
+
+      <!-- Minutes -->
+      <div class="card">
+        <div class="top">
+          <span id="minutes">55</span>
+        </div>
+
+        <div class="bottom">
+        </div>
+
+        <div class="info">
+          Minutes
+        </div>
+      </div>
+
+      <!-- Seconds -->
+      <div class="card">
+        <div class="top">
+          <span id="seconds">41</span>
+        </div>
+
+        <div class="bottom">
+        </div>
+
+        <div class="info">
+          Seconds
+        </div>
+      </div>
+
+    </div>
+    <!-- Timer - End -->
+  </div>
+
+  <div class=social>
+    <i class="fab fa-facebook-square fa-2x"></i>
+    <i class="fab fa-pinterest fa-2x"></i>
+    <i class="fab fa-instagram fa-2x"></i>
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="http://coder-isiah-projects.42web.io/Portfolio/">Isiah Jones</a>.
+  </div>
+</div>
+</body>
+
+</html>
+
+<script src="https://kit.fontawesome.com/d91ccbd4cf.js" crossorigin="anonymous"></script>
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://unpkg.com/dayjs"></script>
+<script src="counter.js"></script>

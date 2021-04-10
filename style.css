@@ -1,0 +1,235 @@
+/* Start */
+/* Font Import */
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@700&display=swap");
+/* font-family: 'Red Hat Text', sans-serif; */
+
+:root {
+  /* Primary */
+  --Grayish-blue: hsl(237, 18%, 59%);
+  --Soft-red: hsl(345, 95%, 68%);
+
+  /* Neutral */
+  --White: hsl(0, 0%, 100%);
+  --Dark-desaturated-blue: hsl(236, 21%, 26%);
+  --Very-dark-blue: hsl(235, 16%, 14%);
+  --Very-dark: hsl(234, 17%, 12%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Red Hat Text", sans-serif;
+}
+
+body {
+  font-size: 14px;
+  background: var(--Very-dark);
+  overflow-x: hidden;
+}
+
+.container {
+  text-align: center;
+  padding-top: 150px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  width: auto 0;
+}
+
+/* Background Section */
+.background {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.bg-stars {
+  z-index: -1;
+  max-width: 100%;
+  position: absolute;
+}
+
+.title {
+  color: var(--White);
+  padding-bottom: 7rem;
+}
+
+/* Card / Timer Section */
+.timer {
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.card {
+  margin: 0 15px;
+  position: relative;
+  overflow: hidden;
+}
+
+.top {
+  background: #2d2f44;
+  border-radius: 5px 5px 0 0;
+  width: 150px;
+  height: 60px;
+}
+
+.bottom {
+  background: var(--Dark-desaturated-blue);
+  border-radius: 0 0 5px 5px;
+  width: 150px;
+  height: 60px;
+  box-shadow: 0 14px 6px -6px black;
+}
+
+span {
+  font-size: 90px;
+  color: var(--Soft-red);
+}
+
+.timer .card .top span {
+  position: relative;
+  /* top: 0px; */
+  opacity: 85%;
+}
+
+.timer .card .bottom span {
+  position: relative;
+  /* top: -68px; */
+  opacity: 50%;
+}
+
+.timer .card::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  background: hsl(240deg 15% 12%);
+  position: absolute;
+  border-radius: 50%;
+  left: -7.5px;
+  top: 53px;
+}
+
+.timer .card::after {
+  content: "";
+  width: 15px;
+  height: 15px;
+  background: hsl(240deg 15% 12%);
+  position: absolute;
+  border-radius: 50%;
+  right: -7.5px;
+  top: 53px;
+}
+
+.info {
+  color: var(--Grayish-blue);
+  padding-top: 1rem;
+}
+
+/* Social */
+.social {
+  padding-top: 18rem;
+  z-index: 100;
+  position: relative;
+}
+.social i {
+  padding: 1rem;
+  color: var(--Grayish-blue);
+}
+
+.social i:hover {
+  color: var(--Soft-red);
+}
+
+/* Front-End Import */
+/* Modified */
+.attribution {
+  font-size: 11px;
+  z-index: 100;
+  position: relative;
+  padding-bottom: 2rem;
+  padding-top: 1rem;
+  color: var(--White);
+}
+
+.attribution a {
+  color: var(--Grayish-blue);
+  text-decoration: none;
+}
+
+.attribution a:hover {
+  color: var(--Soft-red);
+}
+
+@media (max-width: 375px) {
+  .container {
+    padding-top: 8rem;
+  }
+  .background {
+    height: 200px;
+    bottom: 0;
+    padding: 0;
+    margin: 0;
+  }
+
+  .title {
+    padding-bottom: 3rem;
+  }
+
+  .bg-stars {
+    max-width: 100%;
+  }
+
+  /* Card */
+  .top {
+    border-radius: 5px 5px 0 0;
+    width: 65px;
+    height: 35px;
+  }
+
+  .bottom {
+    border-radius: 0 0 5px 5px;
+    width: 65px;
+    height: 35px;
+  }
+
+  .timer .card .top span {
+    top: 10px;
+    left: -0px;
+  }
+
+  .info {
+    font-size: 7.5px;
+  }
+
+  span {
+    font-size: 36px;
+  }
+
+  .timer .card::before {
+    width: 13px;
+    height: 13px;
+    left: -9px;
+    top: 28px;
+  }
+
+  .timer .card::after {
+    width: 13px;
+    height: 13px;
+    right: -9px;
+    top: 28px;
+  }
+
+  /* Card */
+
+  /* Social */
+  .social {
+    padding-top: 10rem;
+  }
+
+  .attribution {
+    padding: 0;
+  }
+}
